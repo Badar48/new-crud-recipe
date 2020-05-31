@@ -73,7 +73,8 @@ if (isset($_POST['submit'])) {
   $email = $_POST['email'];
   $password = $_POST['password'];
   $role = $_POST['role'];
- $conn = mysqli_connect("localhost","root","","crud");
+ $conn = mysqli_connect("h2cwrn74535xdazj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", "n9vogak9ayip1yr2",
+  "x7vbydainteyeo9o","crud");
   if($conn->connect_error){
     die('connection is failed:'.$conn->connect_error);
   }

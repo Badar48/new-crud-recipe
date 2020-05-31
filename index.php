@@ -57,7 +57,7 @@ session_start();
 
 <?php
 
-$conn = mysqli_connect("localhost","root","","crud");
+$conn = mysqli_connect("h2cwrn74535xdazj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com","n9vogak9ayip1yr2","x7vbydainteyeo9o","crud");
 
 if (isset($_POST['submit'])) {
 	$query=mysqli_query($conn, "select * from login where email='".$_POST['email']."' and password='".$_POST['password']."'");

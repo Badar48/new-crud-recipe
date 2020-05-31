@@ -1,0 +1,155 @@
+.freshtextmob2{
+font-size: 4rem !important;
+color: white!important;
+font-family: sans-serif;
+animation: myfirst 2s linear 1s infinite alternate;
+position: relative;
+
+}
+.h-608{
+  height: 608px;
+
+}
+.freshtextmob{
+  font-size: 4rem !important;
+  color: rgb(255, 204, 0)!important;
+  font-family: sans-serif;
+  animation: myfirst 2s linear 1s infinite alternate;
+  position: relative;
+  font-weight: bold;
+
+}
+.img1{
+  background-image: url("img/slider3rd.png");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 100%
+}
+.img2{
+  background-image:url("img/slider2nd.png");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 100%
+}
+.freshtext{
+  font-size: 6rem !important;
+  color: rgb(255, 204, 0)!important;
+  font-family:sans-serif;
+    animation: myfirst 2s linear 2s infinite alternate;
+    position: relative;
+}
+.callus{
+  color: rgb(255, 204, 0)!important;
+}
+.carousel-caption{
+  left: 0% !important;
+  z-index: 1 !important;
+}
+.w-58{
+  width: 58% !important;
+}
+.btnborder{
+  border: 2px solid white ! important;
+  border-radius: 2rem !important;
+}
+
+.btnborder:hover{
+  position: relative;
+    animation: icon 1s linear  infinite alternate;
+}
+
+.anmi{
+    position: relative;
+  animation: bounce 1s linear 1s infinite alternate;
+}
+@keyframes myfirst {
+  0%   { right:0px; top:0px;}
+
+  100% { right:25px; top:0px;}
+}
+@keyframes bounce {
+0%   { left:0px; top:0px;}
+
+  100% { left:0px; top:10px;}
+}
+@keyframes icon {
+  0%   { left:0px; top:0px;}
+
+  100% { left:10px; top:10px; right:10px;}
+}
+@media only screen and (max-width: 600px) {
+   .carousel-control-prev-icon, .carousel-control-next-icon {
+    display: none !important;
+  }
+  .w-72{
+    width: 100% !important;
+  }
+  .w-51{
+    width: 100% !important;
+  }
+
+  .leave{
+    top:-110px;
+  }
+  .callus{
+    font-size: 24px;
+  }
+  .w-18{
+    width: 126px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .viewfull{
+    font-size: 14px;
+  }
+  .enjoy{
+    font-size: 3rem;
+  }
+  body {
+    background-image: none;
+  }
+  .w-316{
+    width: 290px;
+  }
+  .zoomer{
+    font-size: 23px;
+  }
+  .fotertext{
+    font-size: 2.5rem;
+  }
+  .bg-yellow{
+    height: 45rem;
+  }
+  .footerpiza{
+  position: absolute;
+  top:249px;
+  right: 0px;
+  z-index: 2;
+  }
+  .w-26{
+    width: 95%;
+  }
+  .gallery {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+  -webkit-column-width: 100%;
+  -moz-column-width: 100%;
+  column-width: 100%;
+  }
+  .bike{
+    bottom: -30px !important;
+  }
+  .h-265{
+    width: 100% !important;
+  }
+
+}
+@media (max-width: 400px) {
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+}

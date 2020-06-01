@@ -23,14 +23,22 @@ session_start();
 
   <nav class="navbar navbar-expand-lg navbar-light ">
      <a href="chef.php" class="navbar-brand  text-white ml-3"> <img class= " logotop" width="150" src="img/just.png"> </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-    <ul class="navbar-nav w-100">
-      <li class="nav-item active ml-auto">
-        <a class="nav-link  font-weight-bold" href="logout.php">Sign Out<span class="sr-only">(current)</span></a>
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <?php
+        if( $_SESSION['role']=="Chef")
+        echo"<a class='nav-link  font-weight-bold text-dark' href='chefdashboard.php'>Create Recipe</a>"
+
+      ?>
+      </li>
+      <li class="nav-item active ">
+        <a class="nav-link  font-weight-bold pt-0 pt-md-2" href="logout.php">Sign Out<span class="sr-only">(current)</span></a>
       </li>
     </ul>
 
@@ -38,12 +46,6 @@ session_start();
 </nav>
 <?php
 include("slider.php");
-?>
-  <?php
-
-if( $_SESSION['role']==" Chef ")
- echo" <a href='chefdashboard.php'><button>Create Recipe</button></a>"
-
 ?>
 
     <div class="row justify-content-center w-100 mt-4 mb-0 no-gutters">
